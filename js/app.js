@@ -18,9 +18,10 @@ async function getMovies(url){
 }
 
 function getClassByRate(vote){
-    if (vote >= 7) {
+    let num = parseInt(vote)
+    if (num >= 7) {
         return "green";
-    } else if (vote > 5) {
+    } else if (num > 5) {
         return "orange";
     } else {
         return "red";
