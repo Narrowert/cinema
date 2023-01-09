@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #1a191f;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.input__search {
+    padding: 10px;
+    border: 1px solid #4e4e4e;
+    border-radius: 20px;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie {
+    position: relative;
+    width: 240px;
+    margin: 10px;
+}
+
+.movie__cover-inner {
+    position: relative;
+    height: 320px;
+}
+
+.movie__cover {
+    width: 100%;
+    height: 100%;
+}
+
+.movie__cover--dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.movie__cover--dark:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.movie__info {
+    padding: 10px 0;
+}
+
+.movie__title {
+    font-size: 16px;
+    color: #FFFF;
+}
+
+.movie__category {
+    font-size: 14px;
+    color: #ffd80e;
+}
+
+.movie__average {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+
+    background-color: #1a191f;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.movie__average--green {
+    border: 1px solid green;
+}
+
+.movie__average--orange {
+    border: 1px solid orange;
+}
+
+.movie__average--red {
+    border: 1px solid red;
+}
